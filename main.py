@@ -7,14 +7,14 @@ from message import *
 
 
 
-token = "***********************************************"
+token = "5291763635:AAHGUWi5sLAVq5JrjS2AhtBxsyj66kpGMM0"
 bot = telebot.TeleBot(token)
 sticker_id = 'CAACAgIAAxkBAAEFLf9iwN5_f74oBFAlsetkeDhi_XLHLwACUAEAAhYtzTxzKyS_bZOe7CkE'
 
 @bot.message_handler(commands=['start'])
 def start(message):
     bot.send_message(
-        message.chat.id, text="Привет! Напиши сообщение в следубщем формате:\n /pc <цена> \n и я подберу 5 лучших компьютеров!")
+        message.chat.id, text="Привет! Напиши сообщение в следующем формате:\n /pc <цена> \n и я подберу 5 лучших компьютеров!")
 @bot.message_handler(commands=['help'])
 def start(message):
     bot.send_message(message.chat.id, text="Формат ввода: /pc <цена>")
