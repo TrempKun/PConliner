@@ -2,11 +2,12 @@ from dataclasses import replace
 from time import sleep
 import telebot
 from telegram import Sticker
-
-
 from parcing import take_value
+from message import *
 
-token = "*************************************************"
+
+
+token = "5291763635:AAHGUWi5sLAVq5JrjS2AhtBxsyj66kpGMM0"
 bot = telebot.TeleBot(token)
 sticker_id = 'CAACAgIAAxkBAAEFLf9iwN5_f74oBFAlsetkeDhi_XLHLwACUAEAAhYtzTxzKyS_bZOe7CkE'
 
@@ -40,9 +41,9 @@ def price_pc(message):
                 count += 1
                 sleep(0.5)
         else:
-            bot.send_message(message.chat.id, text="Бичуган")
+            bot.send_message(message.chat.id, text=not_result())
     else:
-        bot.send_message(message.chat.id, text="Введите число!")
+        bot.send_message(message.chat.id, text="Введите целое и положительное число и попробуйте снова.")
     
 
 
