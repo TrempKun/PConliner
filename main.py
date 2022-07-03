@@ -6,7 +6,7 @@ from telegram import Sticker
 
 from parcing import take_value
 
-token = "5291763635:AAHGUWi5sLAVq5JrjS2AhtBxsyj66kpGMM0"
+token = "*************************************************"
 bot = telebot.TeleBot(token)
 sticker_id = 'CAACAgIAAxkBAAEFLf9iwN5_f74oBFAlsetkeDhi_XLHLwACUAEAAhYtzTxzKyS_bZOe7CkE'
 
